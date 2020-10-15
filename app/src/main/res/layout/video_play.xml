@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.exoplayer2.ui.PlayerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:hide_on_touch="true"
+    app:show_timeout="5000"
+    app:rewind_increment="10000"
+    app:fastforward_increment="10000"
+    app:use_controller="true"
+    android:background="@android:color/background_dark"
+    app:player_layout_id="@layout/exo_player_view"
+    app:controller_layout_id="@layout/controls_exoplayer"
+    tools:context=".ui.video.VideoPlay">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/labelVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|start"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_volume_up_24"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/custom_thumb"
+            android:indeterminate="false"
+            android:rotation="270" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_volume_off_24"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/labelBright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|end"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_brightness_high_24"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/custom_thumb"
+            android:indeterminate="false"
+            android:rotation="270"
+            android:max="255"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/labelRW"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/replay_10"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_vertical|start"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/labelFF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/forward_10"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_vertical|end"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_00_00"
+        android:textSize="35sp"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</com.google.android.exoplayer2.ui.PlayerView>

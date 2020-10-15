@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/imageAlbumOpen"
+        android:title="@string/open" />
+    <item android:id="@+id/imageAlbumShare"
+        android:title="@string/share" />
+    <item android:id="@+id/imageAlbumDelete"
+        android:title="@string/delete" />
+
+</menu>

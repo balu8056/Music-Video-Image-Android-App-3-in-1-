@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="music_name">Music Name</string>
+    <string name="album_name">Album Name</string>
+    <string name="_00_00">00:00</string>
+    <string name="musicname">MusicName</string>
+    <string name="play">Play</string>
+    <string name="play_next">Play next</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="refresh">Refresh</string>
+    <string name="add_to_queue">Add to queue</string>
+    <string name="search">Search</string>
+    <string name="video">Video</string>
+    <string name="image">Image</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="open">Open</string>
+    <string name="_date">date</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="clear_cache">Clear cache</string>
+</resources>

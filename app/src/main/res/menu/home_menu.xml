@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchMusic"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item android:id="@+id/homeMusicPlayer"
+        android:title="@string/app_name" />
+    <item android:id="@+id/homeVideoPlayer"
+        android:title="@string/video" />
+    <item android:id="@+id/homeMenuImages"
+        android:title="@string/image" />
+    <item android:id="@+id/homeMenuRefresh"
+        android:title="@string/refresh" />
+    <item android:id="@+id/homeMenuDarkMode"
+        android:title="@string/dark_mode"
+        android:checkable="true" />
+    <item android:id="@+id/homeClearCache"
+        android:title="@string/clear_cache" />
+</menu>

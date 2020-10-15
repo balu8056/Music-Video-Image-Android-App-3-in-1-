@@ -1,0 +1,71 @@
+<resources>
+
+    <style name="NewTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionBarStyle">
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TextEndDot" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PlayerTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="Time">
+        <item name="android:text">@string/_00_00</item>
+        <item name="android:textColor">@android:color/white</item>
+
+        <!--        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item> -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="ToolbarSubtitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="ImageTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+    <style name="ImageSubtitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="NewTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>
